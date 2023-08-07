@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".QuestionFragment">
+
+
+    <TextView
+        android:id="@+id/Textview_res"
+        android:layout_width="174dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="¿Conoces este Pokemon?"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="275dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Textview_res"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Radiosi"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/radiono"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
